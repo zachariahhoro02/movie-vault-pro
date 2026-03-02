@@ -18,7 +18,7 @@ export default function App() {
   const [trailerKey, setTrailerKey] = useState(null);
   const [showVideo, setShowVideo] = useState(false);
 
-  const API_KEY = "a1d48e1b09255a8966d547dfed449b6e";
+  const API_KEY = process.env.REACT_APP_TMDB_KEY;
 
   // Save to LocalStorage whenever myList changes
   useEffect(() => {
